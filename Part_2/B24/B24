@@ -1,0 +1,44 @@
+## B24 – Design and implement access control of your choice
+
+### Objective
+
+The objective of this activity was to design and implement an access control system for a real website. The goal was to improve website management security by creating a role with permissions that are specifically relevant to the website’s needs.
+
+---
+
+### Findings
+
+For this activity, I implemented a custom access control role on the website [Wholesome Tales](https://www.wholesometales.com/) using the Members plugin. WordPress already provides some default user roles such as Administrator, Editor, and Author, but these roles were either too powerful or not properly suited for this website’s requirements.
+
+To solve this, I created a new custom role called **“Content Manager.”** This role was designed specifically for a person responsible for managing and editing the website content without giving unnecessary administrative privileges. The idea behind this implementation was to follow the principle of least privilege, where users are only given the permissions they actually need.
+
+First, I reviewed the Members plugin and its features through the official WordPress plugin page to understand how custom roles and permissions could be managed.
+**Evidence 1:** Screenshot showing the Members plugin information page on WordPress.org.
+
+After installing and configuring the plugin, I used the WordPress admin portal to edit and customise the permissions for the new “Content Manager” role. Permissions related to content editing and management were enabled while more sensitive administrator-level controls were restricted.
+**Evidence 2:** Screenshot showing the role permissions being edited in the plugin settings.
+
+Finally, I created a new user account and assigned the newly created “Content Manager” role to that user. This demonstrated that the custom access control system was successfully implemented and working correctly.
+**Evidence 3:** Screenshot showing a new user being assigned to the “Content Manager” role.
+
+Overall, this activity improved the website’s security and management structure because users can now perform their required tasks without receiving full administrator access.
+
+---
+
+### Mitigations
+
+To further improve access control security, website administrators should regularly review user roles and permissions to ensure users only have access to what they need. Strong passwords and multi-factor authentication should also be enabled for all accounts, especially those with editing privileges. Inactive or unused accounts should be removed quickly, and user activity logs can also help monitor any suspicious changes made to website content or settings.
+
+---
+
+### Reflection
+
+This activity helped me understand that access control is a very important part of cybersecurity, especially for websites managed by multiple users. Before this task, I mainly thought of security as protecting against attackers, but this showed me that controlling permissions inside the system is equally important. Creating a custom role made the website more organised and secure because users only receive the access required for their job. It also gave me practical experience with implementing role-based access control in a real environment.
+
+---
+
+### Evidence References
+
+1. [Evidence 1](https://github.com/samo-e/Defensive-Cybersecurity---Portfolio/blob/main/Part_2/B22/Evidence1.png)
+2. [Evidence 2](https://github.com/samo-e/Defensive-Cybersecurity---Portfolio/blob/main/Part_2/B22/Evidence2.png)
+3. [Evidence 3](https://github.com/samo-e/Defensive-Cybersecurity---Portfolio/blob/main/Part_2/B22/Evidence3.png)
